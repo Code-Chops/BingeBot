@@ -1,0 +1,6 @@
+﻿namespace BingeBot.Application.UnitTests;
+
+public class Domain_objects_can_be_tested_here
+{
+	
+}

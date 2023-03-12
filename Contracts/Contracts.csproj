@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup Label="Main">
+        <RootNamespace>BingeBot.Contracts</RootNamespace>
+        <TargetFramework>net7.0</TargetFramework>
+        <LangVersion>11</LangVersion>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+        <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    </PropertyGroup>
+
+    <ItemGroup Label="InternalsVisibleTo">
+        <InternalsVisibleTo Include="$(AssemblyName).UnitTests" />
+        <InternalsVisibleTo Include="$(AssemblyName).IntegrationTests" />
+    </ItemGroup>
+
+    <ItemGroup Label="PackageReferences">
+        <PackageReference Include="CodeChops.Contracts" Version="0.25.0" />
+        <PackageReference Include="CodeChops.DomainModeling" Version="2.12.3" />
+    </ItemGroup>
+
+</Project>

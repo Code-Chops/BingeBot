@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup Label="Main">
+        <RootNamespace>BingeBot.Application.UnitTests</RootNamespace>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup Label="ProjectReferences">
+        <ProjectReference Include="..\Infrastructure.Api.TVmaze\Infrastructure.Api.TVmaze.csproj" />
+        <ProjectReference Include="..\Infrastructure.Databases\Infrastructure.Databases.csproj" />
+    </ItemGroup>
+
+    <ItemGroup Label="PackageReferences">
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+        <PackageReference Include="FluentAssertions" Version="6.10.0" />
+        <PackageReference Include="xunit" Version="2.4.2" />
+        <PackageReference Include="Xunit.DependencyInjection" Version="8.7.1" />
+        <PackageReference Include="Xunit.DependencyInjection.Logging" Version="8.0.1" />
+    </ItemGroup>
+
+</Project>
