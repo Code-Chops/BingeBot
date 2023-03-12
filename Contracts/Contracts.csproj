@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <ItemGroup Label="PackageReferences">
-        <PackageReference Include="CodeChops.Contracts" Version="0.25.0" />
+        <PackageReference Include="CodeChops.Contracts" Version="0.25.1" />
         <PackageReference Include="CodeChops.DomainModeling" Version="2.12.3" />
     </ItemGroup>
 
