@@ -2,9 +2,10 @@
 
 ## Instructions
 In order to run this application you need to have docker installed:
-1. Run the docker compose file `docker-compose.yaml`.
-2. Run `dotnet ef database update` in `Infrastructure.Databases\`.
-3. Run the `Api` application: a swagger UI client should open.
+1. Open the solution BingeBot.sln.
+2. Run the docker compose file `docker-compose.yaml`.
+3. Run `dotnet ef database update` in `Infrastructure.Databases\`.
+4. Run the `Api` application: a swagger UI client should open.
 
 # Justification
 For this project I used .NET 7 and C# 11 (because: new). I acknowledge this .NET version is not LTS. 
