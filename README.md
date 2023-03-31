@@ -4,7 +4,7 @@
 In order to run this application you need to have docker installed:
 1. Open the solution BingeBot.sln.
 2. Run the docker compose file `docker-compose.yaml`.
-3. Run `dotnet ef database update` in `Infrastructure.Databases\`.
+3. Run `dotnet ef database update` in `\Infrastructure.Databases`.
 4. Run the `Api` application: a swagger UI client should open.
 
 # Justification
@@ -41,11 +41,6 @@ I wanted to use Quartz as a job schedule. Quartz.NET is an advanced scheduler wi
 But because of time constraints I used a simpler approach: When the application starts, a background job starts which uses the new `PeriodicTimer`.
 The usage of a background job has a disadvantage: 
 when you need to scale up the performance by running more instances of the API, multiple background task will run simultaneously.
-
-## CQRS / CRUD
-I chose for CRUD: I often think that CQRS makes code become way less readable, as it has a big impact on the design of the application: 
-Concepts get split out because of command/query segregation Also, queries have always to be checked thoroughly and are only SELECT or UPDATE by design. 
-I think a repository pattern is clean and logical. Each method of the repo should perform a read or write.
 
 ## ORM / Database
 I chose for entity framework because I think it integrates very well and is high-level and less verbose than for example Dapper.
